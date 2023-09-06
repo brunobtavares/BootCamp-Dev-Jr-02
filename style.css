@@ -16,3 +16,23 @@
     border-radius: 10px;
     min-width: 50vw;
 }
+
+.title {
+    color: #FECE23;
+    margin: 20px 0px 5px 0px;
+}
+
+.description {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description div {
+    margin-top: 10px;
+    line-height: 35px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
