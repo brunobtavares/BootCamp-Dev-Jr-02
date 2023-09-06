@@ -17,6 +17,12 @@
     min-width: 50vw;
 }
 
+.secondary-box {
+    background-image: linear-gradient(to bottom, #641F70, #1D0C20);
+    border-radius: 10px;
+    width: 95%;
+}
+
 .title {
     color: #FECE23;
     margin: 20px 0px 5px 0px;
