@@ -62,3 +62,137 @@ input[type="text"] {
     display: flex;
     justify-content: center;
 }
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #3B59EE, #74D0FF);
+    margin: 10px 0px 10px 0px;
+    padding: 15px;
+    height: 260px;
+    width: 160px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(to bottom, #2638DB, #342988);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.card span {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.card button {
+    height: auto;
+    background-color: #1D0C20;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.developed-by,
+.developed-by p a {
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+@media (max-width: 1365px) {
+    .container {
+        margin: 10px 0 10px 0px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+
+    .secondary-box {
+        background-image: linear-gradient(to bottom, #641F70, #1D0C20);
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 95%;
+    }
+
+    .title {
+        color: #FECE23;
+        margin: 20px 0px 5px 0px;
+        text-align: center;
+    }
+
+    .sub-title {
+        color: #FFFFFF;
+        font-size: 25px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    .description div {
+        margin-top: 10px;
+        line-height: 25px;
+    }
+
+    input[type="text"] {
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .space-around {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 615px) {
+    .container {
+        margin: 10px 0 10px 0px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+
+    .primary-box {
+        background-image: linear-gradient(to bottom, #1D0C20, #641F70);
+        border-radius: 10px;
+        width: 90vw;
+    }
+
+    .space-around {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-around;
+    }
+}
